@@ -1,18 +1,26 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+  <ion-navbar color="background">
+    <button ion-button menuToggle right>
+      <ion-icon name="menu" ></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title><img class="main-logo" alt="dogloocat" height="35" width="auto"   src="assets/imgs/dogloocat_logo.svg" ></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content padding class="background">
+    <button ion-button large full color="front" class="home-button">{{ trans.foundADog }}</button>
+    <button ion-button large full color="front" class="home-button">{{ trans.lostMyDog }}</button>
+    <button ion-button large full color="front" class="home-button">{{ trans.searches }}</button>
+    <button ion-button large full color="front" class="home-button">{{ trans.messages }}</button>
+    <button ion-button large full color="front" class="home-button">{{ trans.profile }}</button>
+    <!--<ion-item padding="false">{{ trans.goodMorning }}: {{ user.id }}</ion-item>     style=”width:400px;height:400px”-->
+    <!--div #map id="map"></div-->
+    <editable [type]="'Userkem'"></editable>
+    <div id="map" style="width:200px; height:100px;"></div>
+    <button ion-button full color="important" (click)="turnOnMap()">activate</button>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <map #dynamicMap></map>
+    <map #dynamicMap2></map>
+    <!--google-map></google-map-->
 </ion-content>
+

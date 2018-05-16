@@ -1,0 +1,11 @@
+<!-- Generated template for the EditableComponent component -->
+<div>
+    
+    <ion-item>
+      <ion-label color="light">{{ type }}</ion-label>
+      <ion-input [(ngModel)]="user.name" color="light"></ion-input>
+    </ion-item>
+    
+    <button ion-button color="front" float-right small (click)="edit($event)">Change values</button>
+  
+</div>

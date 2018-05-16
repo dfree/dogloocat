@@ -14,3 +14,29 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.background, .background .pane, .background .item, .background .item-complex .item-content, .splash-buttons{
+    background-color: color($colors, background, base);
+    color:white;
+}
+.main-logo{
+    padding-top:0.5em;
+}
+.menu-content {
+    background-color: color($colors, front, base);
+}
+.left{
+   text-align : left;
+}
+.button-inner{
+    justify-content: flex-start;
+}
+.button-md {
+text-transform: none;
+}
+#home-content {
+    margin-top:4em;
+}
+.home-button {
+    margin-top:0.5em;
+}

@@ -38,9 +38,17 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  background: #647b96,
+  front:      #968973,
+  active:     #ffda44,
+  important:  #eaa746,
 );
 
+$menu-width: 200px;
+
+/*$toolbar-background: $colors.background;
+$toolbar-text-color: orange;*/
 
 // App iOS Variables
 // --------------------------------------------------
